@@ -65,7 +65,7 @@ var hbs = exphbs.create({
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT);
 app.use(compression());
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -163,7 +163,7 @@ io.on('connection', function (socket) {
   });
 });
 
-server.listen(app.get('port'), function(){
+server.listen(process.env.PORT || 3000, function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
 
