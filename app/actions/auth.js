@@ -16,7 +16,7 @@ export function login(email, password) {
       })
     }).then((response) => {
       if (response.ok) {
-        console.log(response)
+        console.log(response.body)
         return response.json().then((json) => {
           dispatch({
             type: 'LOGIN_SUCCESS',
@@ -27,7 +27,7 @@ export function login(email, password) {
           browserHistory.push('/account');
         });
       } else {
-        console.log("in else login: " + response)
+        console.log("in else login: " + response.body)
         return response.json().then((json) => {
           dispatch({
             type: 'LOGIN_FAILURE',
