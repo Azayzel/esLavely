@@ -33,7 +33,7 @@ class Header extends React.Component {
       </ul>
     );
     return (
-      <nav className="navbar navbar-default navbar-static-top">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div className="container">
           <div className="navbar-header">
             <button type="button" data-toggle="collapse" data-target="#navbar" className="navbar-toggle collapsed">
@@ -42,13 +42,14 @@ class Header extends React.Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <IndexLink to="/" className="navbar-brand">esLavely</IndexLink>
+            <IndexLink to="/" className="navbar-brand">es | Lavely</IndexLink>
           </div>
           <div id="navbar" className="navbar-collapse collapse">
             <ul className="nav navbar-nav">
               <li><IndexLink to="/" activeStyle={active}>Home</IndexLink></li>
+              <li><Link to="/services" activeStyle={active}>Services</Link></li>
+              <li><a href="https://medium.com/@eslavely" target="_blank" activeStyle={active}>Blog</a></li>
               <li><Link to="/contact" activeStyle={active}>Contact</Link></li>
-              <li><Link to="/contact" activeStyle={active}>Blog</Link></li>
             </ul>
             {rightNav}
           </div>
