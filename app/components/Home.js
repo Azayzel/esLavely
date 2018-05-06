@@ -5,7 +5,7 @@ import Messages from './Messages';
 class Home extends React.Component {
   render() {
     return (
-      <div>
+      <div className="mainBody">
         <div className="bannerBox">
           <img className="img-responsive banner" src="images/facebook_cover_photo_2.png" />
         </div>
