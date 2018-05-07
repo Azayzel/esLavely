@@ -6,10 +6,61 @@ class Home extends React.Component {
   render() {
     return (
       <div className="mainBody">
-        <div className="bannerBox">
-          <img className="img-responsive banner" src="images/facebook_cover_photo_2.png" />
+        <header className="masthead">
+      <div className="container">
+        <div className="intro-text">
+          <div className="intro-lead-in"></div>
+          <div className="intro-heading text-uppercase"></div>
         </div>
+      </div>
+    </header>
         <Messages messages={this.props.messages}/>
+
+    <section id="services">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 text-center">
+            <h2 className="section-heading text-uppercase">Services</h2>
+            <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div className="row text-center">
+          <div className="col-md-4">
+            <span className="fa-stack fa-4x">
+              <i className="fa fa-circle fa-stack-2x text-primary"></i>
+              <i className="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 className="service-heading">E-Commerce</h4>
+            <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          </div>
+          <div className="col-md-4">
+            <span className="fa-stack fa-4x">
+              <i className="fa fa-circle fa-stack-2x text-primary"></i>
+              <i className="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 className="service-heading">Responsive Design</h4>
+            <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          </div>
+          <div className="col-md-4">
+            <span className="fa-stack fa-4x">
+              <i className="fa fa-circle fa-stack-2x text-primary"></i>
+              <i className="fa fa-lock fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 className="service-heading">Web Security</h4>
+            <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-light" id="portfolio">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 text-center">
+            <h2 className="section-heading text-uppercase">Portfolio</h2>
+            <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
        <div className="row">
         <div className="wrap">
           <div className="tile"> 
@@ -108,11 +159,14 @@ class Home extends React.Component {
             
           </div>
         </div>
-            
-            
+
+
+            </div>
+            </section>
           </div>
 
       
+    
     );
   }
 }
