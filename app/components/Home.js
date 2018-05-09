@@ -53,6 +53,8 @@ class Home extends React.Component {
       </div>
     </section>
 
+
+
     <section className="bg-light" id="portfolio">
       <div className="container">
         <div className="row">
@@ -129,30 +131,30 @@ class Home extends React.Component {
 
           <div className="tile"> 
             <img src='https://images.unsplash.com/photo-1458668383970-8ddd3927deed?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80'/>
-            <div className="text">
-            <h1>Lorem ipsum.</h1>
-            <h2 className="animate-text">More lorem ipsum bacon ipsum.</h2>
-            <p className="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-            <div className="dots">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+              <div className="text">
+                <h1>Lorem ipsum.</h1>
+                <h2 className="animate-text">More lorem ipsum bacon ipsum.</h2>
+                <p className="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                <div className="dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
             </div>
           </div>
             
           <div className="tile"> 
               <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80'/>
               <div className="text">
-              <h1>Lorem ipsum.</h1>
-              <h2 className="animate-text">More lorem ipsum bacon ipsum.</h2>
-              <p className="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-              <div className="dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                  <h1>Lorem ipsum.</h1>
+                  <h2 className="animate-text">More lorem ipsum bacon ipsum.</h2>
+                  <p className="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                  <div className="dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
               </div>
-            </div>
             </div>
 
 

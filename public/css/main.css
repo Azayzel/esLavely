@@ -540,7 +540,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 @media (max-width: 800px) {
   .wrap {
    flex-direction: column;
-    width: 400px;
+    width: 90%;
   }
   .tile
   {
@@ -589,6 +589,10 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
     font-size: 20px;
   }
+  .wrap {
+    flex-direction: column;
+     width: 90%;
+   }
   .tile
   {
     width:280px;
