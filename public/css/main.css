@@ -4,8 +4,11 @@
 /* ------------------------- */
 
 html {
-  position: relative;
-  min-height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
 body {
