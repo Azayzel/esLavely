@@ -572,6 +572,27 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color:  black;
   }
+  .tile
+  {
+    width:280px;
+    height:280px;
+    margin:5px;
+    background-color:#99aeff;
+    display:inline-block;
+    background-size:cover;
+    position:relative;
+    cursor:pointer;
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 20px 52px -17px rgba(0,0,0,0.44);
+    overflow:hidden;
+    color:white;
+    font-family:'Roboto';
+    
+  }
+  .wrap {
+    flex-direction: column;
+     width: 90%;
+   }
 }
 @media screen and (max-width: 550px) {
   .bannerBox {
@@ -688,9 +709,6 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
  
 }
-
-
-
 
 body {
   overflow-x: hidden;
