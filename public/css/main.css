@@ -7,7 +7,7 @@ html {
   width: 100vw;
   overflow-x: hidden;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
 }
 
