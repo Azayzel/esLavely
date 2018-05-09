@@ -546,7 +546,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   {
     width:380px;
     height:380px;
-    margin:10px;
+    margin:5px;
     background-color:#99aeff;
     display:inline-block;
     background-size:cover;
@@ -626,9 +626,9 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   }
   .tile
   {
-    width:400px;
-    height:400px;
-    margin:10px;
+    width:350px;
+    height:350px;
+    margin:5px;
     background-color:#99aeff;
     display:inline-block;
     background-size:cover;
