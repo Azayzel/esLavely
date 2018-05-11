@@ -36,19 +36,19 @@ class Contact extends React.Component {
         <form className="contact100-form validate-form" onSubmit={this.handleSubmit.bind(this)}>
           <div className="wrap-input100 validate-input" data-validate="Name is required">
             <span className="label-input100">Full Name:</span>
-            <input className="input100" placeholder="Enter full name" type="text" name="name" id="name" className="form-control" value={this.state.name} onChange={this.handleChange.bind(this)} autoFocus />
+            <input className="input100" placeholder="Enter full name" type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange.bind(this)} autoFocus />
             <span className="focus-input100"></span>
           </div>
 
           <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
             <span className="label-input100">Email:</span>
-            <input className="input100" placeholder="Enter email addess" type="email" name="email" id="email" className="form-control" value={this.state.email} onChange={this.handleChange.bind(this)}/>
+            <input className="input100" placeholder="Enter email addess" type="email" name="email" id="email" value={this.state.email} onChange={this.handleChange.bind(this)}/>
             <span className="focus-input100"></span>
           </div>
 
           <div className="wrap-input100 validate-input" data-validate="Message is required">
             <span className="label-input100">Message:</span>
-            <textarea className="input100" placeholder="What you would like to discuss..." name="message" id="message" rows="7" className="form-control" value={this.state.message} onChange={this.handleChange.bind(this)}></textarea>
+            <textarea className="input100" placeholder="What you would like to discuss..." name="message" id="message" rows="7" value={this.state.message} onChange={this.handleChange.bind(this)}></textarea>
             <span className="focus-input100"></span>
           </div>
 
