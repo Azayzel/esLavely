@@ -1415,7 +1415,7 @@ ul.social-buttons li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 43px 88px 57px 190px;
+  padding: 10px;
 }
 .validate-input {
   position: relative;
@@ -1436,7 +1436,7 @@ ul.social-buttons li a:hover {
   position: absolute;
   top: 14px;
   left: -105px;
-  width: 80px;
+  width: auto;
 }
 .input100 {
   font-family: Poppins-Regular;
