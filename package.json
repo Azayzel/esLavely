@@ -58,6 +58,7 @@
     "babel-register": "^6.8.0",
     "chai": "^3.5.0",
     "enzyme": "^2.3.0",
+    "eslint": "^4.19.1",
     "fetch-mock": "3.0.2",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^15.0.2",

@@ -40,6 +40,6 @@ exports.contactPost = function(req, res) {
   };
 
   transporter.sendMail(mailOptions, function(err) {
-    res.send({ msg: 'Thank you! Your feedback has been submitted.' });
+    res.send({ msg: 'Thank you for contacting me. I will respond shortly!' });
   });
 };
