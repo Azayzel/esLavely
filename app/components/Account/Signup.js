@@ -48,6 +48,9 @@ class Signup extends React.Component {
             <Messages messages={this.props.messages}/>
             <form onSubmit={this.handleSignup.bind(this)}>
               <legend>Create an account</legend>
+              <div>
+                <p className="text-muted"> Sign up and get notified when a new blog post come out, new rates are setup or major updates get released! </p>
+                </div>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="Name" autoFocus className="form-control" value={this.state.name} onChange={this.handleChange.bind(this)}/>

@@ -21,7 +21,7 @@ class Home extends React.Component {
         <div className="row">
           <div className="col-lg-12 text-center">
             <h2 className="section-heading text-uppercase">Services</h2>
-            <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 className="section-subheading text-muted">The Core Components of what <b>es | Lavely</b> brings to the table.</h3>
           </div>
         </div>
         <div className="row text-center">
@@ -31,7 +31,8 @@ class Home extends React.Component {
               <i className="fa fa-code fa-stack-1x fa-inverse"></i>
             </span>
             <h4 className="service-heading">JavaScript</h4>
-            <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <p className="text-muted">This is the core of what <b>es | Lavely </b> is all about. Together we can extend your websites current functionality or build up
+              a new project with the industries top-frameworks (React, Angular, Vue). Code is written with scale and re-usability in mind..</p>
           </div>
           <div className="col-md-4">
             <span className="fa-stack fa-4x">
@@ -44,10 +45,12 @@ class Home extends React.Component {
           <div className="col-md-4">
             <span className="fa-stack fa-4x">
               <i className="fa fa-circle fa-stack-2x text-primary"></i>
-              <i className="fa fa-tachometer fa-stack-1x fa-inverse"></i>
+              <i className="fa fa-cogs fa-stack-1x fa-inverse"></i>
             </span>
             <h4 className="service-heading">Web Performance</h4>
-            <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <p className="text-muted">Sticking to industry best practices when analyzing database queries, page load times, data processing, we
+              can enhance your website's user experience. </p>
+            <p className="text-muted">. </p>
           </div>
         </div>
       </div>
@@ -164,6 +167,10 @@ class Home extends React.Component {
 
 
             </div>
+            </section>
+
+            <section id="About">
+            
             </section>
           </div>
 

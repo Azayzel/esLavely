@@ -682,7 +682,7 @@ h6 {
 }
 
 section {
-  padding: 100px 0
+  padding: 30px 0
 }
 
 section h2.section-heading {
@@ -702,7 +702,7 @@ section h3.section-subheading {
 
 @media (min-width:768px) {
   section {
-      padding: 150px 0
+      padding: 30px 0
   }
 }
 
@@ -878,6 +878,9 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+#services{
+  margin-top: 80px;
+}
 .service-heading {
   margin: 15px 0;
   text-transform: none
@@ -1513,3 +1516,5 @@ button {
   border: none;
   background: transparent;
 }
+
+
