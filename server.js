@@ -42,7 +42,7 @@ var compiler = webpack(config);
 var server = require('http').Server(app);
 var io = require('socket.io').listen(server);
 
-mongoose.connect('mongodb://heroku_8pbst1xp:3nh8ld6e4ipui2jtj4cltc8dsk@ds113720-a0.mlab.com:13720,ds113720-a1.mlab.com:13720/heroku_8pbst1xp?replicaSet=rs-ds113720');
+mongoose.connect(process.env.MONGODB);
 mongoose.connection.on('error', function() {
   console.log('MongoDB Connection Error. Please make sure that MongoDB is running.');
   process.exit(1);
