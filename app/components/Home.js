@@ -1,4 +1,5 @@
 import React from 'react';
+import { IndexLink, Link } from 'react-router';
 import { connect } from 'react-redux'
 import Messages from './Messages';
 
@@ -170,7 +171,23 @@ class Home extends React.Component {
             </section>
 
             <section id="About">
-            
+              <div className="container">
+                <div className="row">
+                  <div className="card">
+                      <img className="card-img" src="/images/me.jpg" alt="Josh Lavely"/>
+                      <h1>Josh Lavely</h1>
+                      <p className="title">CEO & Founder, es | Lavely</p>
+                      <p>Father, Husband, Programmer</p>
+                      <a href="https://github.com/Azayzel" target="_blank"><i className="fab fa-github"></i></a> 
+                      <a href="https://twitter.com/Azayzel_" taregt="_blank"><i className="fab fa-twitter"></i></a> 
+                      <a href="#"><i className="fab fa-linkedin"></i></a> 
+                      <a href="https://www.facebook.com/EsLavely/" target="_blank"><i className="fab fa-facebook"></i></a> 
+                      <p>
+                        <button className="card-button"><Link to="/contact">Contact!</Link></button>
+                      </p>
+                    </div>
+                </div>
+              </div>
             </section>
           </div>
 
