@@ -27,7 +27,7 @@ class Services extends React.Component {
        <div className="row">
         <div className="wrap">
           <div className="tile"> 
-            <img src='https://s3.amazonaws.com/eslavely/javascript.png'/>
+            <img src='https://s3.amazonaws.com/eslavely/javascript.PNG'/>
             <div className="text">
               <h1>JavaScript</h1>
               <h2 className="animate-text">Mobile, Web, Desktop.</h2>
@@ -37,7 +37,7 @@ class Services extends React.Component {
 
 
           <div className="tile"> 
-            <img src='https://s3.amazonaws.com/eslavely/node.png'/>
+            <img src='https://s3.amazonaws.com/eslavely/node.PNG'/>
             <div className="text">
             <h1>Node.js Development.</h1>
             <h2 className="animate-text">REST Endpoints, Web-Crawlers, JWT and more.</h2>
@@ -59,7 +59,7 @@ class Services extends React.Component {
         <div className="row">
         <div className="wrap">
           <div className="tile"> 
-            <img src='https://s3.amazonaws.com/eslavely/c_sharp.png'/>
+            <img src='https://s3.amazonaws.com/eslavely/c_sharp.PNG'/>
             <div className="text">
               <h1>C# Development (Web / Desktop)</h1>
               <h2 className="animate-text">More lorem ipsum bacon ipsum.</h2>
