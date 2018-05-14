@@ -175,7 +175,7 @@ class Home extends React.Component {
               </div>
                 <div className="row">
                   <div className="card">
-                      <img className="card-img" src="/images/me.jpg" alt="Josh Lavely"/>
+                      <img className="card-img" src="https://s3.amazonaws.com/eslavely/me.jpg" alt="Josh Lavely"/>
                       <h1>Josh Lavely</h1>
                       <p className="title">CEO & Founder, <b>es | Lavely</b></p>
                       <p>Father, Husband, Programmer</p>

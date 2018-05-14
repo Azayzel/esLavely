@@ -27,7 +27,7 @@ class Services extends React.Component {
        <div className="row">
         <div className="wrap">
           <div className="tile"> 
-            <img src='/images/services/javascript.png'/>
+            <img src='https://s3.amazonaws.com/eslavely/javascript.png'/>
             <div className="text">
               <h1>JavaScript</h1>
               <h2 className="animate-text">Mobile, Web, Desktop.</h2>
@@ -37,7 +37,7 @@ class Services extends React.Component {
 
 
           <div className="tile"> 
-            <img src='/images/services/node.png'/>
+            <img src='https://s3.amazonaws.com/eslavely/node.png'/>
             <div className="text">
             <h1>Node.js Development.</h1>
             <h2 className="animate-text">REST Endpoints, Web-Crawlers, JWT and more.</h2>
@@ -46,7 +46,7 @@ class Services extends React.Component {
           </div>
             
           <div className="tile"> 
-              <img src='/images/services/webdesign.jpg'/>
+              <img src='https://s3.amazonaws.com/eslavely/webdesign.jpg'/>
               <div className="text">
               <h1>Web Design UI/UX.</h1>
               <h2 className="animate-text">Clean, Usable and Elegant Designs.</h2>
@@ -59,7 +59,7 @@ class Services extends React.Component {
         <div className="row">
         <div className="wrap">
           <div className="tile"> 
-            <img src='/images/services/c_sharp.png'/>
+            <img src='https://s3.amazonaws.com/eslavely/c_sharp.png'/>
             <div className="text">
               <h1>C# Development (Web / Desktop)</h1>
               <h2 className="animate-text">More lorem ipsum bacon ipsum.</h2>
@@ -69,7 +69,7 @@ class Services extends React.Component {
 
 
           <div className="tile"> 
-            <img src='/images/services/windows_services.png'/>
+            <img src='https://s3.amazonaws.com/eslavely/windows_services.png'/>
               <div className="text">
                 <h1>Windows Service Development</h1>
                 <h2 className="animate-text">Powerful, Reliable and Resource Trivial.</h2>
@@ -78,7 +78,7 @@ class Services extends React.Component {
           </div>
             
           <div className="tile"> 
-              <img src='/images/services/powershell.jpg'/>
+              <img src='https://s3.amazonaws.com/eslavely/powershell.jpg'/>
               <div className="text">
                   <h1>Powershell Scripting</h1>
                   <h2 className="animate-text">Runspaces, Jobs, and Modules.</h2>
@@ -91,7 +91,7 @@ class Services extends React.Component {
      <div className="row">
         <div className="wrap">
           <div className="tile"> 
-            <img src='/images/services/exchange.jpg'/>
+            <img src='https://s3.amazonaws.com/eslavely/exchange.jpg'/>
             <div className="text">
               <h1>MS Exchange</h1>
               <h2 className="animate-text">Databases, DAGs, OWA and OA.</h2>
@@ -102,7 +102,7 @@ class Services extends React.Component {
 
 
           <div className="tile"> 
-            <img src='/images/services/active_directory.jpg'/>
+            <img src='https://s3.amazonaws.com/eslavely/active_directory.jpg'/>
               <div className="text">
                 <h1>MS Active Directory</h1>
                 <h2 className="animate-text">More lorem ipsum bacon ipsum.</h2>
@@ -111,7 +111,7 @@ class Services extends React.Component {
           </div>
             
           <div className="tile"> 
-              <img src='/images/services/seo.png'/>
+              <img src='https://s3.amazonaws.com/eslavely/seo.png'/>
               <div className="text">
                   <h1>Search Engine Optimization (SEO)</h1>
                   <h2 className="animate-text">More lorem ipsum bacon ipsum.</h2>
