@@ -159,24 +159,25 @@ class Home extends React.Component {
                       <span></span>
                   </div>
               </div>
-            </div>
-
-
-            
+            </div> 
           </div>
         </div>
+       </div>
+      </section>
 
-
-            </div>
-            </section>
-
-            <section id="About">
+      <section id="About">
               <div className="container">
+              <div className="row">
+                <div className="col-lg-12 text-center">
+                  <h2 className="section-heading text-uppercase">Team Members</h2>
+                  <h3 className="section-subheading text-muted">Small team, big passion.</h3>
+                </div>
+              </div>
                 <div className="row">
                   <div className="card">
                       <img className="card-img" src="/images/me.jpg" alt="Josh Lavely"/>
                       <h1>Josh Lavely</h1>
-                      <p className="title">CEO & Founder, es | Lavely</p>
+                      <p className="title">CEO & Founder, <b>es | Lavely</b></p>
                       <p>Father, Husband, Programmer</p>
                       <a href="https://github.com/Azayzel" target="_blank"><i className="fab fa-github"></i></a> 
                       <a href="https://twitter.com/Azayzel_" taregt="_blank"><i className="fab fa-twitter"></i></a> 
@@ -188,8 +189,8 @@ class Home extends React.Component {
                     </div>
                 </div>
               </div>
-            </section>
-          </div>
+        </section>
+    </div>
 
       
     
