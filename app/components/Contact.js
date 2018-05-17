@@ -68,6 +68,7 @@ class Contact extends React.Component {
 }
 
 const mapStateToProps = (state) => {
+  this.state()
   return {
     messages: state.messages
   };
