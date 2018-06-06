@@ -31,6 +31,7 @@ var User = require('./models/User');
 // Controllers
 var userController = require('./controllers/user');
 var contactController = require('./controllers/contact');
+var mediumController = require('./controllers/medium');
 
 // React and Server-Side Rendering
 var routes = require('./app/routes');
@@ -43,21 +44,23 @@ var server = require('http').Server(app);
 var io = require('socket.io').listen(server);
 
 mongoose.connect(process.env.MONGODB_URI);
-mongoose.connection.on('error', function() {
-  console.log('MongoDB Connection Error. Please make sure that MongoDB is running.');
-  process.exit(1);
-});
+mongoose
+  .connection
+  .on('error', function () {
+    console.log('MongoDB Connection Error. Please make sure that MongoDB is running.');
+    process.exit(1);
+  });
 
 var hbs = exphbs.create({
   defaultLayout: 'main',
   helpers: {
-    ifeq: function(a, b, options) {
+    ifeq: function (a, b, options) {
       if (a === b) {
         return options.fn(this);
       }
       return options.inverse(this);
     },
-    toJSON : function(object) {
+    toJSON: function (object) {
       return JSON.stringify(object);
     }
   }
@@ -69,13 +72,13 @@ app.set('port', process.env.PORT);
 app.use(compression());
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(expressValidator());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(function(req, res, next) {
-  req.isAuthenticated = function() {
+app.use(function (req, res, next) {
+  req.isAuthenticated = function () {
     var token = (req.headers.authorization && req.headers.authorization.split(' ')[1]) || req.cookies.token;
     try {
       return jwt.verify(token, process.env.TOKEN_SECRET);
@@ -86,8 +89,8 @@ app.use(function(req, res, next) {
 
   if (req.isAuthenticated()) {
     var payload = req.isAuthenticated();
-    User.findById(payload.sub, function(err, user) {
-      
+    User.findById(payload.sub, function (err, user) {
+
       req.user = user;
       next();
     });
@@ -120,25 +123,36 @@ app.post('/auth/twitter', userController.authTwitter);
 app.get('/auth/twitter/callback', userController.authTwitterCallback);
 app.post('/auth/github', userController.authGithub);
 app.get('/auth/github/callback', userController.authGithubCallback);
+app.get('/blogs', mediumController.getBlogs);
 
 // React server rendering
-app.use(function(req, res) {
+app.use(function (req, res) {
   var initialState = {
-    auth: { token: req.cookies.token, user: req.user },
+    auth: {
+      token: req.cookies.token,
+      user: req.user
+    },
     messages: {}
   };
 
   var store = configureStore(initialState);
 
-  Router.match({ routes: routes.default(store), location: req.url }, function(err, redirectLocation, renderProps) {
+  Router.match({
+    routes: routes.default(store),
+    location: req.url
+  }, function (err, redirectLocation, renderProps) {
     if (err) {
-      res.status(500).send(err.message);
+      res
+        .status(500)
+        .send(err.message);
     } else if (redirectLocation) {
-      res.status(302).redirect(redirectLocation.pathname + redirectLocation.search);
+      res
+        .status(302)
+        .redirect(redirectLocation.pathname + redirectLocation.search);
     } else if (renderProps) {
-      var html = ReactDOM.renderToString(React.createElement(Provider, { store: store },
-        React.createElement(Router.RouterContext, renderProps)
-      ));
+      var html = ReactDOM.renderToString(React.createElement(Provider, {
+        store: store
+      }, React.createElement(Router.RouterContext, renderProps)));
       res.render('layouts/main', {
         html: html,
         initialState: store.getState()
@@ -151,20 +165,22 @@ app.use(function(req, res) {
 
 // Production error handler
 if (app.get('env') === 'production') {
-  app.use(function(err, req, res, next) {
-    console.error(err.stack);
-    res.sendStatus(err.status || 500);
-  });
+  app
+    .use(function (err, req, res, next) {
+      console.error(err.stack);
+      res.sendStatus(err.status || 500);
+    });
 }
 
-io.on('connection', function (socket) {
-  socket.emit('news', { hello: 'world' });
-  socket.on('my other event', function (data) {
-    console.log(data);
+io
+  .on('connection', function (socket) {
+    socket.emit('news', {hello: 'world'});
+    socket.on('my other event', function (data) {
+      console.log(data);
+    });
   });
-});
 
-server.listen(process.env.PORT || 3000, function(){
+server.listen(process.env.PORT || 3001, function () {
   console.log('Express server listening on port ' + app.get('port'));
 });
 
