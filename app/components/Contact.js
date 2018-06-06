@@ -19,56 +19,70 @@ class Contact extends React.Component {
   }
 
   render() {
+    const style1 = {
+      margin: '80px'
+    }
     return (
-      <div className="container">
-       <Messages messages={this.props.messages}/>
-       <div className="wrap-contact100">
-        <div className="contact100-form-title" >
-          <span className="contact100-form-title-1">
-            Contact Me Now
-          </span>
-
-          <span className="contact100-form-title-2">
-            Feel free to send me a message and get the conversation started. You deserve an online presence that will work for YOU!
-          </span>
+      <div style={style1}>
+        <div className="container">
+          <div className="">
+            <h2 className="mb20">Got Something You Want To Talk About?</h2>
+            <p>No need to be too descriptive at this stage. Just briefly explain what you'd like to discuss!.</p>
+          </div>
         </div>
+        <section className="probootstrap-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-8">
+                <form action="#" method="post" className="probootstrap-form mb60">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" className="form-control" id="fname" name="fname" />
+                      </div>
+                      </div>
+                      <div className="col-md-6">
+                        <div className="form-group">
+                          <label for="lname">Last Name</label>
+                          <input type="text" className="form-control" id="lname" name="lname" />
+                        </div>
+                        </div>
+                      </div>
+                      <div className="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" className="form-control" id="email" name="email" />
+                      </div>
+                        <div className="form-group">
+                          <label for="message">Message</label>
+                          <textarea cols="30" rows="10" className="form-control" id="message" name="message"></textarea>
+                        </div>
+                        <div className="form-group">
+                          <input type="submit" className="btn btn-primary" id="submit" name="submit" value="Send Message" />
+                    </div>
+                  </form>
+                      </div>
+                      <div className="col-md-3 col-md-push-1">
+                        <h4>Contact Details</h4>
+                        <ul className="with-icon colored">
+                          <li><i className="icon-location2"></i> <span>Fredericksburg, Va, 22408</span></li>
+                          <li><i className="icon-mail"></i><span>contact@eslavely.com</span></li>
+                          <li><i className="icon-phone2"></i><span>+703 862 7672</span></li>
+                        </ul>
 
-        <form className="contact100-form validate-form" onSubmit={this.handleSubmit.bind(this)}>
-          <div className="wrap-input100 validate-input" data-validate="Name is required">
-            <span className="label-input100">Full Name:</span>
-            <input className="input100" placeholder="Enter full name" type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange.bind(this)} autoFocus />
-            <span className="focus-input100"></span>
-          </div>
-
-          <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-            <span className="label-input100">Email:</span>
-            <input className="input100" placeholder="Enter email addess" type="email" name="email" id="email" value={this.state.email} onChange={this.handleChange.bind(this)}/>
-            <span className="focus-input100"></span>
-          </div>
-
-          <div className="wrap-input100 validate-input" data-validate="Message is required">
-            <span className="label-input100">Message:</span>
-            <textarea className="input100" placeholder="What you would like to discuss..." name="message" id="message" rows="7" value={this.state.message} onChange={this.handleChange.bind(this)}></textarea>
-            <span className="focus-input100"></span>
-          </div>
-
-          <div className="container-contact100-form-btn">
-            <button className="contact100-form-btn">
-              <span>
-                Submit
-                <i className="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-        </form>
-		</div>
+                        <h4>Feedback</h4>
+                        <p>We'd love to hear what you think!</p>
+                        <p><a href="#">Learn More</a></p>
+                      </div>
+                    </div>
+                  </div>
+            </section>
       </div>
     );
   }
 }
 
 const mapStateToProps = (state) => {
-  this.state()
   return {
     messages: state.messages
   };
